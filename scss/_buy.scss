@@ -1,0 +1,24 @@
+.buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__line {
+        display: flex;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    &__heading {
+        display: flex;
+        min-height: 175px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+        display: flex;
+        margin-bottom: 60px;
+    }
+}

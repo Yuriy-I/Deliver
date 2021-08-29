@@ -1,0 +1,264 @@
+@import "_constants";
+
+.footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 360px;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background-color: #333333;
+        z-index: -1;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px 0 30px;
+
+        @media screen and (max-width: $maxtab2) {
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        &:last-child {
+            @media screen and (max-width: $maxtab2) {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-of-type(1) {
+            width: 35%;
+            margin-top: 30px;
+
+            @media screen and (max-width: $maxtab2) {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            @media screen and (max-width: $maxphone) {
+                margin-top: 0;
+            }
+        }
+
+        &:nth-of-type(2) {
+            width: 15%;
+
+            @media screen and (max-width: $maxtab2) {
+                width: 30%;
+            }
+
+            @media screen and (max-width: $maxphone) {
+                width: 55%;
+            }
+        }
+
+        &:nth-of-type(3) {
+            width: 10%;
+
+            @media screen and (max-width: $maxtab2) {
+                width: 20%;
+            }
+
+            @media screen and (max-width: $maxphone) {
+                width: 30%;
+            }
+        }
+
+        &:nth-of-type(4) {
+            width: 18%;
+
+            @media screen and (max-width: $maxtab2) {
+                width: 40%;
+            }
+
+            @media screen and (max-width: $maxphone) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &:first-child {
+            align-items: flex-end;
+        }
+
+        @media screen and (max-width: $maxphone) {
+            margin: 20px 0 10px;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__socials {
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__desc {
+        font-family: "Helvetica";
+        font-size: 1em;
+        line-height: 24px;
+        font-weight: 400;
+        color: #9b9999;
+        margin-bottom: 15px;
+
+        &--strong {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #fefefe;
+        }
+    }
+
+    &__caption {
+        font-family: "Novecento";
+        font-size: 1.2em;
+        line-height: 24px;
+        font-weight: 600;
+        color: #fefefe;
+    }
+
+    &__link {
+        font-family: "Helvetica";
+        font-size: 1em;
+        line-height: 24px;
+        font-weight: 400;
+        color: #9b9999;
+        margin-left: 15px;
+        position: relative;
+
+        &::before {
+            display: flex;
+            position: absolute;
+            content: "";
+            top: 40%;
+            left: -15px;
+            transform: translateY(-3.5px);
+            width: 7px;
+            height: 7px;
+            border-top: 2px solid #fefefe;
+            border-right: 2px solid #fefefe;
+            transform: rotate(45deg);
+        }
+
+        &:hover {
+            text-decoration: underline;
+            color: #cbcbcb;
+        }
+    }
+
+    &__form {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 72%;
+        height: 100%;
+        font-family: "Helvetica";
+        font-size: 14px;
+        font-weight: 400;
+        color: #fefefe;
+        padding-left: 5%;
+        background-color: #4e4c4c;
+
+        &::placeholder {
+            color: #fefefe;
+        }
+
+        &:hover {
+            background-color: #616060;
+        }
+
+        &:focus {
+            border: 1px solid #828282;
+        }
+    }
+
+    &__submit {
+        width: 25%;
+        height: 100%;
+        background-color: #828282;
+        font-family: "Novecento";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #fefefe;
+
+        &:hover {
+            background-color: #6d6d6d;
+            cursor: pointer;
+        }
+    }
+
+    &__copyright {
+    }
+
+    &__copy {
+        font-family: "Novecento";
+        font-size: 1em;
+        line-height: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #808080;
+
+        &--white {
+            color: #cbcbcb;
+        }
+
+        @media screen and (max-width: $maxtab2) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__breadcrumbs {
+        @media screen and (max-width: $maxtab2) {
+            width: 100%;
+            text-align-last: center;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__link-chain {
+        font-family: "Novecento";
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #808080;
+
+        &:nth-of-type(2)::before,
+        &:nth-of-type(2)::after {
+            content: "/";
+            margin: 0 5px;
+            color: #cbcbcb;
+        }
+
+        &:hover {
+            color: #cbcbcb;
+        }
+    }
+}

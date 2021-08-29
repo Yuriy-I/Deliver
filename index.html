@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Deliver</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header__row">
+            <div class="header__logo">
+                <div class="logo">
+                    <a href="index.html" class="logo__text">Deliver</a>
+                </div>
+            </div>
+            <div class="header__socials">
+                <div class="socials">
+                    <a href="https://twitter.com" class="socials__link">
+                        <img src="img/style/twitter.png" alt="twitter" class="socials__image">
+                    </a>
+                    <a href="https://facebook.com" class="socials__link">
+                        <img src="img/style/facebook.png" alt="facebook" class="socials__image">
+                    </a>
+                    <a href="https://www.ukr.net/news/world.html" class="socials__link">
+                        <img src="img/style/rss.png" alt="rss" class="socials__image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__line container">
+            <div class="line"></div>
+        </div>
+        <div class="header__row">
+            <nav class="header__nav">
+                <div class="header__menu">
+                    <a href="#" class="header__link">
+                        <p class="header__item header__item--active">Home</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p class="header__item">Portfolio</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p class="header__item">About</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p class="header__item">Services</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p class="header__item">Archive</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p class="header__item">Blog</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p class="header__item">Other Pages</p>
+                    </a>
+                    <a href="#" class="header__link">
+                        <p class="header__item">Contact Us</p>
+                    </a>
+                </div>
+                <div class="header__burger burger">
+                    <input type="checkbox" id="burger__check">
+                    <label for="burger__check" class="burger__label"></label>
+                    <div class="burger__line first-line"></div>
+                    <div class="burger__line second-line"></div>
+                    <div class="burger__line third-line"></div>
+                    <div class="burger__line fourth-line"></div>
+                    <nav class="burger__menu">
+                        <a href="#" class="burger__item"></a>
+                        <a href="#" class="burger__item">Home</a>
+                        <a href="#" class="burger__item">Portfolio</a>
+                        <a href="#" class="burger__item">About</a>
+                        <a href="#" class="burger__item">Services</a>
+                        <a href="#" class="burger__item">Archive</a>
+                        <a href="#" class="burger__item">Blog</a>
+                        <a href="#" class="burger__item">Other Pages</a>
+                        <a href="#" class="burger__item">Contact Us</a>
+                    </nav>
+                </div>
+                <div class="header__search">
+                    <form action="#" method="POST" class="header__form">
+                        <input type="text" name="search" placeholder="Search..." class="header__input">
+                        <input type="submit" class="header__submit">
+                    </form>
+                    <img src="img/header/magnifier.png" alt="search" class="header__search-img">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="slider middle">
+        <div class="slider__slides">
+            <input type="radio" name="slider__input" id="slider__r1" checked>
+            <input type="radio" name="slider__input" id="slider__r2">
+            <input type="radio" name="slider__input" id="slider__r3">
+            <input type="radio" name="slider__input" id="slider__r4">
+
+            <div class="slider__slide slider__s1">
+                <img src="img/slider/slider-bg-1.png" alt="">
+                <div class="slider__text">
+                    <h1 class="slider__title">We <span class="slider__title--green">Deliver</span> nothing Short of
+                        Awesome!</h1>
+                    <h2 class="slider__subtitle">Check out our portfolio to see our great work.</h2>
+                    <a href="#" class="button">
+                        <p class="but-name">portfolio</p>
+                    </a>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <img src="img/slider/slider-bg-2.jpg" alt="">
+                <div class="slider__text">
+                    <h1 class="slider__title">We Deliver <span class="slider__title--green">nothing</span> Short of
+                        Awesome!</h1>
+                    <h2 class="slider__subtitle">Check about us to see our great work.</h2>
+                    <a href="#" class="button">
+                        <p class="but-name">about</p>
+                    </a>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <img src="img/slider/slider-bg-3.jpg" alt="">
+                <div class="slider__text">
+                    <h1 class="slider__title">We Deliver nothing <span class="slider__title--green">Short of</span>
+                        Awesome!</h1>
+                    <h2 class="slider__subtitle">Check out our services to see our great work.</h2>
+                    <a href="#" class="button">
+                        <p class="but-name">services</p>
+                    </a>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <img src="img/slider/slider-bg-4.jpg" alt="">
+                <div class="slider__text">
+                    <h1 class="slider__title">We Deliver nothing Short of <span
+                            class="slider__title--green">Awesome!</span></h1>
+                    <h2 class="slider__subtitle">Check out our archive to see our great work.</h2>
+                    <a href="#" class="button">
+                        <p class="but-name">archive</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__navigation">
+            <label for="slider__r1" class="slider__bar-point"></label>
+            <label for="slider__r2" class="slider__bar-point"></label>
+            <label for="slider__r3" class="slider__bar-point"></label>
+            <label for="slider__r4" class="slider__bar-point"></label>
+        </div>
+    </section>
+    <section class="services container">
+        <div class="services__heading">
+            <h2 class="title">We are a Small Team Doing Big Things!</h2>
+            <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In cum repellat fugiat
+                expedita rem impedit error molestiae, soluta, debitis hic odio atque libero? Cupiditate voluptates ex,
+                voluptatem non provident labore.</h3>
+        </div>
+        <div class="services__line">
+            <div class="line line--gray"></div>
+        </div>
+        <div class="services__cards">
+            <div class="services__item">
+                <div class="services__img">
+                    <img src="img/services/icon_1.png" alt="">
+                </div>
+                <p class="services__name">Service 1</p>
+                <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni ex
+                    architecto sint autem enim accusamus?</p>
+                <a href="" class="services__link">Find Out More</a>
+            </div>
+            <div class="services__item">
+                <div class="services__img">
+                    <img src="img/services/icon_2.png" alt="">
+                </div>
+                <p class="services__name">Service 2</p>
+                <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni ex
+                    architecto sint autem enim accusamus?</p>
+                <a href="" class="services__link">Find Out More</a>
+            </div>
+            <div class="services__item">
+                <div class="services__img">
+                    <img src="img/services/icon_3.png" alt="">
+                </div>
+                <p class="services__name">Service 3</p>
+                <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni ex
+                    architecto sint autem enim accusamus?</p>
+                <a href="" class="services__link">Find Out More</a>
+            </div>
+        </div>
+    </section>
+    <section class="work">
+        <div class="work__bg"></div>
+        <div class="work__heading container">
+            <h2 class="title">Some of Our Latest Work</h2>
+            <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In cum repellat fugiat
+                expedita rem impedit error molestiae, soluta, debitis hic odio atque libero? Cupiditate voluptates ex,
+                voluptatem non provident labore.</h3>
+        </div>
+        <div class="work__cards container">
+            <div class="work__item">
+                <div class="work__icon">
+                    <img src="img/work/note_frame_wind_260x149.png" alt="" class="work__frame">
+                    <a href="#" class="work__img">
+                        <img src="img/work/img_1.jpg" alt="" class="work__picture">
+                    </a>
+                </div>
+                <a href="#" class="work__name">Circle Icons</a>
+            </div>
+            <div class="work__item">
+                <div class="work__icon">
+                    <img src="img/work/note_frame_wind_260x149.png" alt="" class="work__frame">
+                    <a href="#" class="work__img">
+                        <img src="img/work/img_2.jpg" alt="" class="work__picture">
+                    </a>
+                </div>
+                <a href="#" class="work__name">Arrows</a>
+            </div>
+            <div class="work__item">
+                <div class="work__icon">
+                    <img src="img/work/note_frame_wind_260x149.png" alt="" class="work__frame">
+                    <a href="#" class="work__img">
+                        <img src="img/work/img_3.jpg" alt="" class="work__picture">
+                    </a>
+                </div>
+                <a href="#" class="work__name">Portfolio Theme</a>
+            </div>
+        </div>
+    </section>
+    <section class="buy container">
+        <div class="buy__line">
+            <div class="line line--gray"></div>
+        </div>
+        <div class="buy__heading">
+            <h2 class="title">Do you Like What You See?</h2>
+            <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In cum repellat fugiat
+                expedita rem impedit error molestiae, soluta, debitis hic odio atque libero? Cupiditate voluptates ex,
+                voluptatem non provident labore.</h3>
+        </div>
+        <div class="buy__button">
+            <a href="#" class="button button--green">
+                <p class="but-name">Purchase</p>
+            </a>
+        </div>
+    </section>
+    <footer class="footer container">
+        <div class="footer__bg"></div>
+        <div class="footer__row">
+                <div class="footer__col">
+                    <div class="footer__title">
+                        <div class="footer__logo">
+                            <div class="logo">
+                                <a href="index.html" class="logo__text">Deliver</a>
+                            </div>
+                        </div>
+                        <div class="footer__socials">
+                            <div class="socials">
+                                <a href="https://twitter.com" class="socials__link">
+                                    <img src="img/style/twitter.png" alt="twitter" class="socials__image">
+                                </a>
+                                <a href="https://facebook.com" class="socials__link">
+                                    <img src="img/style/facebook.png" alt="facebook" class="socials__image">
+                                </a>
+                                <a href="https://www.ukr.net/news/world.html" class="socials__link">
+                                    <img src="img/style/rss.png" alt="rss" class="socials__image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__text">
+                        <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+                            similique
+                            quidem doloribus aspernatur dolores id modi fuga? Sequi, accusamus blanditiis! Quidem
+                            dolores
+                            odio ex fuga repellat ducimus saepe, commodi velit.</p>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__title">
+                        <p class="footer__caption">Contact info</p>
+                    </div>
+                    <div class="footer__text">
+                        <p class="footer__desc">
+                            222 Ave C South<br>Saskatoon, Saskatchewan<br>Canada S7K2N5
+                        </p>
+                        <p class="footer__desc">
+                            info@deliver.ca
+                        </p>
+                        <p class="footer__desc footer__desc--strong">1.306.222.3456</p>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__title">
+                        <p class="footer__caption">Quick Links</p>
+                    </div>
+                    <div class="footer__text">
+                        <a href="#" class="footer__link">Portfolio</a>
+                        <a href="#" class="footer__link">About</a>
+                        <a href="#" class="footer__link">Archive</a>
+                        <a href="#" class="footer__link">Blog</a>
+                        <a href="#" class="footer__link">Dropdown</a>
+                        <a href="#" class="footer__link">Contact Us</a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__title">
+                        <p class="footer__caption">Newsletter</p>
+                    </div>
+                    <div class="footer__text">
+                        <p class="footer__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <form action="#" method="POST" class="footer__form">
+                        <input type="text" name="email" placeholder="Email" class="footer__input">
+                        <input type="submit" value="OK" class="footer__submit">
+                    </form>
+                </div>
+        </div>
+        <div class="footer__row">
+            <div class="footer__copyright">
+                <p class="footer__copy">Copyright 2013 <strong
+                        class="footer__copy footer__copy--white">Deliver.</strong> All Rights Reserved.</p>
+            </div>
+            <div class="footer__breadcrumbs">
+                <a href="#" class="footer__link-chain">About</a>
+                <a href="#" class="footer__link-chain">Privacy policy</a>
+                <a href="#" class="footer__link-chain">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

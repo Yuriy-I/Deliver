@@ -1,0 +1,130 @@
+@import "_constants";
+
+.work {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__heading {
+        display: flex;
+        min-height: 175px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__cards {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        @media screen and (max-width: $maxtab2) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__bg {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 83%;
+        background-color: rgb(239, 239, 239);
+    }
+
+    &__item {
+        display: flex;
+        width: 30%;
+        min-width: 240px;
+        flex-direction: column;
+
+        &:first-child{
+            margin-right: 10px;
+        }
+
+        &:last-child{
+            margin-left: 10px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    &__frame {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    &__img {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 74%;
+        height: 71%;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(233, 233, 233, 0.75);
+            margin-bottom: -100%;
+            transition: .2s;
+        }
+
+        &:hover::before {
+            margin-bottom: 0;
+            transition: .2s;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../img/work/plus.png) 50% -100% no-repeat;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+
+        &:hover::after {
+            background-position: center;
+            transition: .5s;
+            transition-delay: .1s;
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-family: "Novecento";
+        font-size: 1.2em;
+        line-height: 24px;
+        font-weight: 600;
+        color: #666262;
+        text-align: center;
+        margin-top: 20px;
+
+        &:hover {
+            color: #87b672;
+            text-decoration: underline;
+        }
+    }
+}

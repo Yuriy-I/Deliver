@@ -1,0 +1,137 @@
+@import "_constants";
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+    &__row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 80px;
+    }
+
+    &__logo {
+    }
+
+    &__socials {
+    }
+
+    &__line {
+        position: absolute;
+        width: 100%;
+        top: 115px;
+        left: 0;
+    }
+
+    &__nav {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+
+        @media screen and (max-width: $maxtab1) {
+            display: none;
+        }
+    }
+
+    &__link {
+    }
+
+    &__item {
+        font-family: "Novecento", sans-serif;
+        font-size: 1.125em;
+        color: #ffffff;
+
+        &--active {
+            color: #87b672;
+        }
+
+        &:hover {
+            color: #87b672;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @media screen and (max-width: $maxtab1) {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__search {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 20%;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    &__input {
+        display: flex;
+        width: 22px;
+        height: 22px;
+        border-radius: 10px 10px 0 10px;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: "Novecento", sans-serif;
+        font-size: 1em;
+        padding: 0 8px;
+        color: #666262;
+        opacity: 0;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            transition: 0.5s;
+        }
+
+        &:focus {
+            opacity: 1;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            border: solid 1px #666262;
+            
+            &::placeholder {
+                text-transform: lowercase; //почему не работает?
+            }
+        }
+    }
+
+    &__submit {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__search-img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}
