@@ -114,6 +114,24 @@
   width: 20%;
 }
 
+@media screen and (max-width: 991px) {
+  .header__search {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__search {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header__search {
+    width: 60%;
+  }
+}
+
 .header__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +140,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
+  z-index: 1;
 }
 
 .header__input {
@@ -187,6 +206,7 @@
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   pointer-events: none;
+  z-index: -1;
 }
 
 .burger {
