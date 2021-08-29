@@ -80,6 +80,16 @@
         right: 0;
         transform: translateY(-50%);
         width: 20%;
+
+        @media screen and (max-width: $maxtab1) {
+            width: 30%;
+        }
+        @media screen and (max-width: $maxtab2) {
+            width: 40%;
+        }
+        @media screen and (max-width: $maxphone) {
+            width: 60%;
+        }
     }
 
     &__form {
@@ -133,5 +143,6 @@
         top: 50%;
         transform: translateY(-50%);
         pointer-events: none;
+        z-index: -1;
     }
 }
